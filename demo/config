@@ -1,0 +1,13 @@
+thread = 8
+logger = nil
+--logger = "demo/skynet.log"
+harbor = 1
+address = "127.0.0.1:2526"
+master = "127.0.0.1:2013"
+start = "main"
+standalone = "0.0.0.0:2013"
+debug_port = 8686
+luaservice = "skynet/service/?.lua;demo/?.lua"
+cpath = "skynet/cservice/?.so"
+lua_path = "skynet/lualib/?.lua"
+lua_cpath = "skynet/luaclib/?.so"

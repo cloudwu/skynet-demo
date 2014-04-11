@@ -1,0 +1,14 @@
+[:1000001] LAUNCH logger demo/skynet.log
+[:1000003] LAUNCH gate L ! 0.0.0.0:2013 5 256 0
+[:1000002] LAUNCH master 0.0.0.0:2013
+[:1000004] Harbor(1) connect to 127.0.0.1:2013
+[:1000005] LAUNCH gate L ! 127.0.0.1:2526 5 256 0
+[:1000004] LAUNCH harbor 127.0.0.1:2013 127.0.0.1:2526 1
+[:1000006] LAUNCH localcast 
+[:1000007] LAUNCH snlua launcher
+[:1000008] LAUNCH snlua main
+[:1000002] Master connect to harbor(1) 127.0.0.1:2526
+[:1000009] LAUNCH snlua service_mgr
+[:100000a] LAUNCH snlua simplemonitor
+[:100000b] LAUNCH snlua debug_console 8686
+[:1000008] KILL self
